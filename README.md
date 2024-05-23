@@ -24,6 +24,7 @@ cd my-app
 npm install --save-dev webpack webpack-cli webpack-dev-server
 npm install --save-dev babel-loader @babel/core @babel/preset-env @babel/preset-react
 npm install --save-dev html-webpack-plugin
+npm install --save-dev html-loader file-loader
 ```
 ## 3. Set Up Babel Configuration
 
@@ -73,3 +74,23 @@ npm run build
 
 
 This will generate a dist folder with your production-ready files.
+
+
+
+## To clean unwanted old bundle in your dist install following package and use it as a plugin
+
+```bash
+npm install --save-dev clean-webpack-plugin
+```
+
+
+## to get css bundle install this package
+
+```bash
+npm install --save-dev mini-css-extract-plugin
+```
+## to optimize css bundle install this package
+
+```bash
+npm install css-minimizer-webpack-plugin --save-dev
+```
